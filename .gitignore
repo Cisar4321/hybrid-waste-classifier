@@ -1,0 +1,7 @@
+data/raw/
+data/processed/
+results/figures/
+results/metrics/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
