@@ -1,5 +1,6 @@
 data/raw/
 data/processed/
+data/segmented/
 results/figures/
 results/metrics/
 __pycache__/
