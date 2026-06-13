@@ -10,3 +10,6 @@ notebook
 ipykernel
 tqdm
 Pillow
+tensorflow
+torch
+scipy
