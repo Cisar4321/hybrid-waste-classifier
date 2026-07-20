@@ -1,16 +1,20 @@
-opencv-python
-numpy
-scikit-learn
+# requirements.txt — Hybrid Waste Classifier
+# Cubre la app Streamlit y los notebooks 01-07.
+# Recomendado: Python 3.12 (hay wheels para todo esto).
+# Nota: los notebooks 06-07 requieren un venv aparte con Python 3.11,
+# tf-keras y TF_USE_LEGACY_KERAS=1 (ver README).
+
+streamlit
+numpy>=2.0                 # los .pkl de los modelos se serializaron con numpy 2.x
+opencv-python-headless     # SIN GUI: Streamlit Cloud no tiene libGL (opencv-python falla al importar)
 scikit-image
-matplotlib
-seaborn
-pandas
+scikit-learn==1.9.0        # versión con la que se serializaron el SVM y el scaler (para des-picklear)
+scipy
 joblib
+pandas
+matplotlib
+tensorflow-cpu             # CPU-only: evita librerías CUDA y reduce uso de memoria
 notebook
 ipykernel
 tqdm
 Pillow
-tensorflow
-torch
-scipy
-streamlit
